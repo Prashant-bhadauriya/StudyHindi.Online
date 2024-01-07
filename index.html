@@ -1,57 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="web design,responsive web design">
-    <meta name="author" content="Prashant Bhadauriya">
-    <title>StudyHindi.Online</title>
-    <link rel="icon" type="image/x-icon" href="/images/logo.jpeg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="/images/logo.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>StudyHindi.Online</title>
 </head>
 <body>
-    <!-- navbar -->
-    <div class="container-fluid p-0">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="/images/logo.jpeg" alt="Bootstrap" width="30" height="24" class="d-inline-block align-text-top">
-            StudyHindi.Online
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-          </div>
+
+<!-- Navigation Bar -->
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top">
+  <a class="navbar-brand" href="#">
+    <img src="/images/logo.jpeg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top me-2 ms-1">
+    StudyHindi.Online
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#courses">Courses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+
+<!-- Hero Section -->
+<section class="jumbotron text-center">
+  <div class="container">
+  </div>
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/hero.jpg" class="d-block w-100 hero-img" alt="hero" height="400px">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4">Welcome to Your StudyHindi.Online</h1>
+          <p class="lead">Learn and grow with our diverse range of courses.</p>
+          <a href="#courses" class="btn btn-primary btn-lg">Explore Courses</a>
         </div>
-      </nav>
-      <!-- landing page -->
-      <img src="/images/22.jpg" class="img-fluid" alt="...">
+      </div>
+    </div> 
+    <div class="container p-2 mt-2">
+      <h3>Why Study Hindi?</h3>
+      <p>
+        Hindi, serving as the primary language for nearly 425 million individuals and embraced by an additional 120 million as their secondary language, holds a significant linguistic footprint. As the official language of the world's largest democracy, India, Hindi resonates across the nation, notably in states such as Uttar Pradesh, Haryana, Himachal Pradesh, and the capital Delhi in North India. It finds prominence in Eastern India with Bihar and Jharkhand, in Central India with Madhya Pradesh and Chhattisgarh, and in West India with Rajasthan. This linguistic tapestry positions Hindi as the third-largest language globally, with prevalence extending beyond India to countries like Mauritius, Fiji, Suriname, Guyana, Trinidad & Tobago, and Nepal. <br>
+        Written in the Devanagari script, Hindi bears the strong influence of Sanskrit and follows a left-to-right script. Each character in Hindi possesses a distinct sound, allowing words to be transcribed as they are pronounced, contributing to the language's phonetic clarity and rich cultural heritage.
+      </p>
+    </div> 
+  </div>
+</section>
+
+<!-- Courses Section -->
+<section id="courses" class="container mt-4">
+  <h2 class="text-center mb-4">Featured Courses</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="course1.jpg" class="card-img-top" alt="Course 1 Image">
+        <div class="card-body">
+          <h5 class="card-title">Course 1</h5>
+          <p class="card-text">Description of Course 1.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
     </div>
-    
-    <footer>
-        <p>StudyHindi.Online, Copyright &copy;2024</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <!-- Repeat similar blocks for other courses -->
+  </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="bg-light">
+  <div class="container py-4">
+    <h2 class="text-center mb-4">About Us</h2>
+    <p class="lead">StudyHindi.online stands out as a distinguished language institute in India, recognized for its excellence in online Hindi education. Specializing in instructing Hindi to both foreigners and NRIs, StudyHindi.online is committed to honing writing, reading, and conversational skills with precise pronunciation, catering to learners from beginners to advanced levels. Embrace the convenience of studying from the comfort of your home at a flexible schedule tailored to your preferences. Additionally, we offer the option of home tuition for groups, ensuring a personalized and immersive learning experience.</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container-fluid m-0 p-0">
+  <h2 class="text-center mb-4">Contact Us</h2>
+  <p class="lead">Feel free to reach out to us for any inquiries or support.</p>
+  <!-- Include a contact form or contact details here -->
+</section>
+
+<!-- footer -->
+<footer>
+  <p>StudyHindi.Online, Copyright &copy;2024</p>
+</footer>
+
+<!-- Bootstrap JS and jQuery (required for Bootstrap functionality) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>
