@@ -12,7 +12,7 @@
 
 <!-- Navigation Bar -->
 <div class="container">
-<nav class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
   <a class="navbar-brand" href="#">
     <img src="/images/logo.jpeg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top me-2 ms-1">
     StudyHindi.Online
@@ -39,47 +39,84 @@
 </nav>
 </div>
 
+<div class="conatiner-fluid">
 <!-- Hero Section -->
-<section class="jumbotron text-center">
-  <div class="container">
-  </div>
-  <div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/hero.jpg" class="d-block w-100 hero-img" alt="hero" height="400px">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="display-4">Welcome to Your StudyHindi.Online</h1>
-          <p class="lead">Learn and grow with our diverse range of courses.</p>
-          <a href="#courses" class="btn btn-primary btn-lg">Explore Courses</a>
+<section class="jumbotron bg-light">
+     <div class="container">
+      <div class="card mb-3 border-0">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/images/hero.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 mt-lg-5 text-center">
+            <div class="card-body">
+              <h1 class="card-title">Welcome to Your StudyHindi.Online</h1>
+              <p class="card-text">Learn and grow with our diverse range of courses.</p>
+              <a href="#courses" class="btn btn-primary ">Explore Courses</a>
+            </div>
+          </div>
         </div>
+        <h2 class="ps-4 pe-4">Why Study Hindi?</h2>
+        <p class="p-4 pt-2">
+          Hindi, serving as the primary language for nearly 425 million individuals and embraced by an additional 120 million as their secondary language, holds a significant linguistic footprint. As the official language of the world's largest democracy, India, Hindi resonates across the nation, notably in states such as Uttar Pradesh, Haryana, Himachal Pradesh, and the capital Delhi in North India. It finds prominence in Eastern India with Bihar and Jharkhand, in Central India with Madhya Pradesh and Chhattisgarh, and in West India with Rajasthan. This linguistic tapestry positions Hindi as the third-largest language globally, with prevalence extending beyond India to countries like Mauritius, Fiji, Suriname, Guyana, Trinidad & Tobago, and Nepal. <br>
+          Written in the Devanagari script, Hindi bears the strong influence of Sanskrit and follows a left-to-right script. Each character in Hindi possesses a distinct sound, allowing words to be transcribed as they are pronounced, contributing to the language's phonetic clarity and rich cultural heritage.
+        </p>
       </div>
     </div> 
-    <div class="container p-2 mt-2">
-      <h3>Why Study Hindi?</h3>
-      <p>
-        Hindi, serving as the primary language for nearly 425 million individuals and embraced by an additional 120 million as their secondary language, holds a significant linguistic footprint. As the official language of the world's largest democracy, India, Hindi resonates across the nation, notably in states such as Uttar Pradesh, Haryana, Himachal Pradesh, and the capital Delhi in North India. It finds prominence in Eastern India with Bihar and Jharkhand, in Central India with Madhya Pradesh and Chhattisgarh, and in West India with Rajasthan. This linguistic tapestry positions Hindi as the third-largest language globally, with prevalence extending beyond India to countries like Mauritius, Fiji, Suriname, Guyana, Trinidad & Tobago, and Nepal. <br>
-        Written in the Devanagari script, Hindi bears the strong influence of Sanskrit and follows a left-to-right script. Each character in Hindi possesses a distinct sound, allowing words to be transcribed as they are pronounced, contributing to the language's phonetic clarity and rich cultural heritage.
-      </p>
-    </div> 
-  </div>
 </section>
 
 <!-- Courses Section -->
-<section id="courses" class="container mt-4">
+<section id="courses" class="container mt-4 mb-4 bg-white">
   <h2 class="text-center mb-4">Featured Courses</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card mb-4">
-        <img src="course1.jpg" class="card-img-top" alt="Course 1 Image">
-        <div class="card-body">
-          <h5 class="card-title">Course 1</h5>
-          <p class="card-text">Description of Course 1.</p>
-          <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-    <!-- Repeat similar blocks for other courses -->
-  </div>
+  <div class="container table-card m-2 p-4">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col">Course Name</th>
+        <th scope="col">Course Code</th>
+        <th scope="col">Course Duration</th>
+        <th scope="col">Fee(One on One)</th>
+        <th scope="col">Fee(Group)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Short term Hindi classes(Beginner Level)</td>
+        <td>SH-STB-50</td>
+        <td>50 hours</td>
+        <td>Rs 800/hour</td>
+        <td>Rs 500/hour</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Short term Hindi classes(Intermediate Level)</td>
+        <td>SH-STI-40</td>
+        <td>40 hours</td>
+        <td>Rs 800/hour</td>
+        <td>Rs 500/hour</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Short term Hindi classes(Adavanced Level)</td>
+        <td>SH-STA-20</td>
+        <td>20 hours</td>
+        <td>Rs 800/hour</td>
+        <td>Rs 500/hour</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Short term Hindi classes(Not for beginners)</td>
+        <td>SH-STC</td>
+        <td>10 hours</td>
+        <td>Rs 800/hour</td>
+        <td>Rs 500/hour</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><b>Remarks:</b> Group classes will be possible only with a minimum participation of 3 or more people.</p>
+</div>
 </section>
 
 <!-- About Us Section -->
@@ -91,12 +128,43 @@
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="container-fluid m-0 p-0">
-  <h2 class="text-center mb-4">Contact Us</h2>
+<section id="contact" class="container mb-5">
+  <h2 class=" mt-4">Contact Us</h2>
   <p class="lead">Feel free to reach out to us for any inquiries or support.</p>
-  <!-- Include a contact form or contact details here -->
+  <div class="row">
+    <div class="col-sm-5 mb-3 mb-sm-0">
+      <div class="card card-morph">
+        <div class="card-body">
+          <h5 class="card-title text-center">
+            <img src="/images/contact.jpg" alt="contact" height="200px">
+          </h5>
+          <h5 class="card-text text-center">+91 9354431943<h5/>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <!-- <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-center">
+            <img src="/images/home.jpg" alt="home-ico" height="100px">
+          </h5>
+          <p class="card-text text-center">STUDY HINDI ONLINE <br>Hindi Online for Foreigners & NRIs</p>
+        </div>
+      </div> -->
+    </div>
+    <div class="col-sm-5">
+      <div class="card card-morph">
+        <div class="card-body">
+          <h5 class="card-title text-center">
+            <img src="/images/email.jpg" alt="email-ico" height="200px">
+          </h5>
+          <h5 class="card-text text-center"> studyhindi.online1@gmail.com<h5/>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
+</div>
 <!-- footer -->
 <footer>
   <p>StudyHindi.Online, Copyright &copy;2024</p>
