@@ -1,39 +1,273 @@
-/* body .bg-img{
-    background: url(/images/bg.jpg);
-    background-size: cover !important;
-} */
-.btn-primary{
-  background-color: #ED7D2B !important;
-  border-color: transparent;
-  border-radius: 0;
+/* Reset some default styles */
+:root {
+    --background-light: #ECECF1;
+    --text-light: #333;
+    --background-dark: #343541;
+    --text-dark: #ECECF1;
 }
 
-.btn-primary:hover{
+body.light-mode {
+    background-color: var(--background-light) !important;
+    color: var(--text-light) !important;
+}
+
+body.dark-mode {
+    background-color: var(--background-dark) !important;
+    color: var(--text-dark) !important;
+}
+
+.table-card {
+    border-radius: 20px !important;
+    background: var(--background-light) !important;
+    box-shadow:  20px 20px 60px #c9c9cd,
+                 -20px -20px 60px #ffffff !important;
+}
+
+.dark-mode .table-card {
+    background-color: var(--background-dark) !important;
+    color: var(--text-dark) !important;
+    border-radius: 20px !important;
+    box-shadow:  20px 20px 60px #2c2d37,
+             -20px -20px 60px #3c3d4b !important;
+}
+
+.table,
+.table th, td {
+    background-color: var(--background-light) !important;
+    color: var(--text-light) !important;
+}
+
+.dark-mode .table th,
+.dark-mode .table td {
+    background-color: var(--background-dark) !important;
+    color: var(--text-dark) !important;
+}
+
+.card-morph {
+    border-radius: 20px !important;
+    background: var(--background-light) !important;
+    box-shadow:  20px 20px 60px #c9c9cd,
+                 -20px -20px 60px #ffffff !important;
+}
+
+.dark-mode .card-morph {
+    background-color: var(--background-dark) !important;
+    color: var(--text-dark) !important;
+    border-radius: 20px !important;
+    box-shadow:  20px 20px 60px #2c2d37,
+             -20px -20px 60px #3c3d4b !important;
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .navbar {
+    background-color: var(--background-dark) !important;
+    color: var(--text-dark) !important;
+}
+
+.dark-mode .navbar-nav a {
+    color: var(--text-dark) !important;
+}
+
+
+/* Navigation Bar Styles */
+.navbar-brand img {
+    margin-right: 5px;
+}
+
+.span-brand {
+    color: #ED7D2B;
+}
+
+/* Hero Section Styles */
+.jumbotron {
+    padding: 2rem 1rem;
+    /* background-color: #ED7D2B; */
+    border-radius: 10px; 
+}
+
+.jumbotron img {
+    border-radius: 50%;
+}
+
+.jumbotron h1 {
+    font-size: 2.5rem;
+}
+
+.jumbotron p {
+    font-size: 1.2rem;
+}
+
+.jumbotron .btn-primary {
+    font-size: 1.2rem;
+    background-color: #ED7D2B !important;
+    border-color: transparent;
+    border-radius: 0;
+}
+
+.jumbotron .btn-primary:hover {
     border-color: transparent !important;
 }
 
-.table-card{
-    border-radius: 10px;
-    box-shadow: 
-    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-    -8px -8px 12px 0 rgba(255, 255, 255, 0.3) !important;
+/* Why Study Hindi Section Styles */
+.container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
-.card-morph{
-    border: 0 !important;
-    border-radius: 10px;
-    box-shadow: 
-    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-    -8px -8px 12px 0 rgba(255, 255, 255, 0.3) !important;
+/* Technical Requirements Section Styles */
+.tech-container h2 {
+    color: #ED7D2B;
 }
 
-footer{
-     padding: 20px;
-     /* margin-top: 20px; */
-     color: #ffff;
-     background:#ED7D2B;
-     text-align: center;
- }
- /*Media Queries*/
- @media(max-width:768px){
- }
+.tech-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.tech-container p {
+    font-size: 1.1rem;
+}
+
+/* Terms and Conditions Section Styles */
+.term-container ol {
+    list-style-type: decimal !important;
+    margin-left: 20px;
+}
+
+.term-container ol li {
+    font-size: 1.1rem;
+}
+
+.term-container p {
+    font-size: 1.1rem;
+}
+
+/* Available Courses Section Styles */
+.course-container p {
+    font-size: 1.2rem;
+}
+
+/* Featured Courses Section Styles */
+
+.table th,
+.table td {
+    font-size: 1.1rem;
+}
+
+.table-card p {
+    font-size: 1.1rem;
+}
+
+/* About Us Section Styles */
+.container.py-4 p.lead {
+    font-size: 1.2rem;
+}
+
+/* Contact Section Styles */
+.container h2 {
+    color: #ED7D2B;
+}
+
+.fa-phone-square-alt {
+    color: #ED7D2B;
+    font-size: 12rem;
+}
+
+.add-ico {
+    color: #ED7D2B;
+    font-size: 10rem;
+}
+
+
+/* Button Styles */
+.btn-primary {
+    background-color: #ED7D2B !important;
+    border-color: transparent;
+    border-radius: 0;
+}
+
+.btn-primary:hover {
+    border-color: transparent !important;
+}
+
+/* Card Styles */
+.table-card {
+    border-radius: 10px;
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+        -8px -8px 12px 0 rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Footer Section Styles */
+footer {
+    background: #ED7D2B;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* Dark Mode Toggle Button Styles */
+.dark-mode-toggle {
+    position: fixed;
+    top: 40%;
+    left: 5px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+/* Toggle Button Styles */
+.toggle-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 1px solid;
+    cursor: pointer;
+    padding: 10px;
+    color: #000000;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+/* Icon Styles */
+.toggle-button i {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* Toggle Button Label Styles */
+.toggle-label {
+    transition: opacity 0.3s ease-in-out;
+    margin-right: 5px;
+}
+
+/* Active State Styles */
+.toggle-button.active i {
+    transform: rotate(180deg);
+}
+
+/* Dark Mode Styles */
+.dark-mode .toggle-button {
+    color: white;
+}
+
+.dark-mode .toggle-button.active i {
+    transform: rotate(180deg) scale(1.2);
+    color: #ED7D2B;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Add your responsive styles here if needed */
+}
